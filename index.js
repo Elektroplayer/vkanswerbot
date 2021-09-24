@@ -187,7 +187,7 @@ bot.on(async (ctx) => {
 
                         let order = user.orders.filter(elm => elm.status == "Завершено")[text-1];
 
-                        ctx.reply(`Практическая работа №${order.num}\nВариант ${order.variant}\nДата: ${order.date}\nОтветы:\n${order.attachment.join("\n")}`, null )
+                        ctx.reply(`Практическая работа №${order.num}\nВариант ${order.variant}\nДата: ${order.date}\nОтветы:\n${order.attachment.join("\n")}`, null, menu.other)
 
                         break;
                     }
